@@ -17,4 +17,9 @@ class Review < ApplicationRecord
 		average = self.reviews.average(:atmosphere_rate)
     return average_round(average)
 	end
+
+	def average_rate
+		average = self.reviews.average(:atmosphere_rate, :feed_rate, :service_rate)
+    return average_round(average)
+	end
 end
