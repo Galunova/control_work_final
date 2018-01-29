@@ -31,5 +31,5 @@ permit_params :title, :description, :status, :image
       f.input :image
     end
     f.actions
-  end
+  end	
 end
