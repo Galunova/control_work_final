@@ -1,0 +1,15 @@
+<h2>Create establishment</h2>
+
+<%= form_for(resource, as: resource_name, url: new_establishment_path(resource_name)) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title, autofocus: true, autocomplete: "title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field  :description, autocomplete: "description" %>
+  </div>
+
+<% end %>

@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates :name, :surname, presence: true, length: {minimum: 2, maximum: 20}
 	
 	has_many :images, dependent: :destroy	
-	
+	has_many :establishments, dependent: :destroy	
 	def status?(s)
 	  status.include? s.to_s
 	end

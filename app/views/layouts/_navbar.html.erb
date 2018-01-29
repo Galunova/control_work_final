@@ -12,7 +12,6 @@
       <% if signed_in? %>
           <li><%= link_to "Hello, #{current_user.name}!", edit_user_registration_path %></li>
           <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
-          <li><%= link_to "Admin", admin_root_path if current_user.role?(:admin) %></li>
       <% else %>
           <li><%= link_to "Sign up", new_user_registration_path %></li>
           <li><%= link_to "Log in", new_user_session_path %></li>
