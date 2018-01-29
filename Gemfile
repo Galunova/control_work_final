@@ -34,6 +34,8 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'cancancan'
 gem 'carrierwave', '~> 1.0'
 gem 'rmagick'
+gem 'faker'
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
