@@ -17,7 +17,7 @@
 
   <% @establishments.each do |establishment| %>
       <tr>
-        <td><%= image_tag "/uploads/#{establishment.id}", size: '100' %></td>
+        <td><%= image_tag(establishment.image_url(:thumb)) if establishment.image? %></td>
         <td><%= link_to establishment.title, establishment_path(establishment) %></td>
         <td><%= establishment.description %></td>
         <td><%= establishment.category.title %></td>

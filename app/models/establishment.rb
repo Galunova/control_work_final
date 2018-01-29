@@ -4,5 +4,5 @@ class Establishment < ApplicationRecord
 	has_many :reviews, dependent: :destroy	
 	belongs_to :category	
 	belongs_to :user
-	# mount_uploader :avatar, ImageUploader
+	mount_uploader :image, ImageUploader
 end
